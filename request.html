@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check your NZeTA status</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://www.immigration.govt.nz/++resource++inz.static.42/images/header2019/inz_header_logo_light.svg" alt="New Zealand Immigration Logo">
+        </div>
+        <!-- Add a menu toggle button -->
+        <button class="menu-toggle">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="#">Request an NZeTA</a></li>
+                <li><a href="request.html">Check your NZeTA status</a></li>
+                <li><a href="#">Update your NZeTA</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Check your NZeTA status</h1>
+        <p>Use this form to check the status of your NZeTA.</p>
+        <form>
+            <!-- Your existing form fields -->
+            <div class="form-group">
+                <label>Do you have an NZeTA reference number? <span class="required">*</span></label>
+                <div>
+                    <input type="radio" id="no" name="nzeta_reference" value="no" checked>
+                    <label for="no">No</label>
+                    <input type="radio" id="yes" name="nzeta_reference" value="yes">
+                    <label for="yes">Yes</label>
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <label for="passport_number">Enter your passport number exactly as it appears on your passport <span class="required">*</span></label>
+                <input type="text" id="passport_number" name="passport_number" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="nationality">Select your nationality as shown on the passport you will be travelling on <span class="required">*</span></label>
+                <input type="text" id="nationality" name="nationality" required>
+            </div>
+        
+            <div class="form-group">
+                <label>Select the expiry date as shown on your passport <span class="required">*</span></label>
+                <div class="expiry-date">
+                    <select name="expiry_day" required>
+                        <option value="">Day</option>
+                        <!-- Options for days -->
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <!-- Add options up to 31 -->
+                    </select>
+                    <select name="expiry_month" required>
+                        <option value="">Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <!-- Add options for all months -->
+                    </select>
+                    <select name="expiry_year" required>
+                        <option value="">Year</option>
+                        <!-- Options for years -->
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <!-- Add options as needed -->
+                    </select>
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <label>Select the date of Birth as shown on your passport <span class="required">*</span></label>
+                <div class="expiry-date">
+                    <select name="dob_day" required>
+                        <option value="">Day</option>
+                        <!-- Options for days -->
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <!-- Add options up to 31 -->
+                    </select>
+                    <select name="dob_month" required>
+                        <option value="">Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <!-- Add options for all months -->
+                    </select>
+                    <select name="dob_year" required>
+                        <option value="">Year</option>
+                        <!-- Options for years -->
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <!-- Add options as needed -->
+                    </select>
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <button type="submit" class="search-button">Search</button>
+            </div>
+        </form>
+        
+    </div>
+   
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="https://www.mbie.govt.nz/resources/themes/mbie/dist/img/logo.svg?m=1717072773" alt="Ministry of Business, Innovation & Employment" class="footer-logo">
+                <span class="footer-text">MINISTRY OF BUSINESS, INNOVATION & EMPLOYMENT</span>
+                <span class="footer-text">HĪKINA WHAKATUTUKI</span>
+            </div>
+            <div class="footer-right">
+                <span class="footer-text">New Zealand Government</span> 
+            </div>
+        </div>
+        <hr>
+        <div class="footer-links">
+            <a href="#">ACCESSIBILITY</a>
+            <a href="#">PRIVACY</a>
+            <a href="#">COPYRIGHT</a>
+            <a href="#">TERMS OF USE</a>
+            <a href="#">CONTACT US</a>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2024 IMMIGRATION NEW ZEALAND</span>
+            <span>(170820)</span>
+        </div>
+    </footer>
+
+    <!-- Include JavaScript file for menu toggle functionality -->
+    <script src="script.js"></script>
+</body>
+</html>

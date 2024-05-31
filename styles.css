@@ -1,0 +1,356 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 170px;
+}
+
+header .logo img {
+    margin-left: 90px;
+    height: 250px;
+    width: 130px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-top: 140px;
+    margin-left: 10rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust this value to your preference */
+    width: 100%;
+    height: 2px; /* Thickness of the bottom border */
+    background-color: white;
+    transition: bottom 0.5s ease; /* Optional: Add transition for smooth effect */
+    opacity: 0; /* Initially invisible */
+}
+
+nav ul li a:hover::after {
+    bottom: 0;
+    opacity: 1;
+}
+
+.step-indicator {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+    background-color: #f1f1f1;
+    padding: 1rem;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #e9e9e9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.step.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.content {
+    padding: 1rem;
+}
+
+.content h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.info-box {
+    margin: 1rem 0;
+}
+
+.info-box h2 {
+    color: #007bff;
+}
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 40px;
+    margin-right: 10px;
+    filter: brightness(100);
+}
+
+.footer-text {
+    font-size: 14px;
+    display: block;
+    line-height: 1.5;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    font-size: 14px;
+}
+
+.footer-bottom span {
+    display: block;
+    margin: 5px 0;
+}
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+    header .logo img {
+        height: 200px;
+        width: 100px;
+    }
+
+    nav ul li {
+        margin-left: 5rem;
+    }
+
+    footer .footer-top img {
+        margin-left: 150px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    header {
+        height: 120px;
+    }
+
+    header .logo img {
+        height: 150px;
+        width: 80px;
+    }
+
+    nav ul li {
+        margin-left: 2rem;
+    }
+
+    footer .footer-top img {
+        margin-left: 100px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    header {
+        height: 150px;
+    }
+
+    header .logo img {
+        height: 200px;
+        width: 120px;
+    }
+
+    nav ul li {
+        margin-left: 3rem;
+    }
+
+    footer .footer-top img {
+        margin-left: 200px;
+    }
+}
+/* Your existing CSS styles */
+
+/* Hamburger menu styles */
+.menu-toggle {
+    display: none; /* Initially hidden on larger screens */
+  }
+  
+  /* Small devices (phones, 576px and up) */
+  @media (max-width: 575.98px) {
+    header .menu-toggle {
+      display: block; /* Displayed as block element on smaller screens */
+    }
+  
+    nav ul {
+      display: none; /* Initially hidden on smaller screens */
+      flex-direction: column; /* Align menu items vertically */
+      background-color: #000; /* Background color for menu */
+      position: absolute; /* Position absolutely for overlay effect */
+      top: 70px; /* Adjust top position based on header height */
+      left: 0;
+      width: 100%;
+    }
+  
+    nav ul.open {
+      display: flex; /* Display when menu is open */
+    }
+  
+    nav ul li {
+      margin-left: 0; /* Remove left margin for menu items */
+      padding: 10px; /* Add padding for menu items */
+      text-align: center; /* Center-align menu items */
+    }
+  }
+  .container {
+    width: 70%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 30%;
+}
+
+.column h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.column p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.column ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.column ul li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.app-store {
+    width: 120px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.privacy-link {
+    display: block;
+    margin-bottom: 20px;
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.privacy-link:hover {
+    text-decoration: underline;
+}  
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.required {
+    color: red;
+}

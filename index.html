@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZeTA Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://www.immigration.govt.nz/++resource++inz.static.42/images/header2019/inz_header_logo_light.svg" alt="New Zealand Immigration Logo">
+        </div>
+        <!-- Add a menu toggle button -->
+        <button class="menu-toggle">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="#">Request an NZeTA</a></li>
+                <li><a href="request.html">Check your NZeTA status</a></li>
+                <li><a href="#">Update your NZeTA</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="step-indicator">
+            <div class="step active">1. Traveller information</div>
+            <div class="step">2. Traveller Photo</div>
+            <div class="step">3. Review and confirm details</div>
+            <div class="step">4. Declaration</div>
+            <div class="step">5. Pay and submit</div>
+        </div>
+        <div class="container">
+            <h1>Request an NZeTA</h1>
+            <p class="subheading">Use this form to request an NZeTA (New Zealand Electronic Travel Authority) and pay for an International Visitor Conservation and Tourism Levy (IVL).</p>
+            <div class="content">
+                <div class="column">
+                    <h2>Mobile app</h2>
+                    <p>The fastest way to request your NZeTA is by downloading our free app to your mobile phone. If you use the app it will take you less than 5 minutes to complete your request.</p>
+                    <p>You can use the app to scan your passport to instantly upload your details and scan your credit or debit card for ease of payment.</p>
+                    <p>Download the free app now.</p>
+                    <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play" class="app-store">
+                    <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-example-preferred.png" alt="Download on the App Store" class="app-store">
+                </div>
+                <div class="column">
+                    <h2>Cost and processing time</h2>
+                    <p>An NZeTA request costs NZD $17 on our free app, or NZD $23 if completed online.</p>
+                    <p>Allow 72 hours for your NZeTA request to be processed. Many requests will be processed more quickly.</p>
+                    <h3>You need:</h3>
+                    <ul>
+                        <li>a valid passport that you will use to travel to New Zealand</li>
+                        <li>a credit card or debit card (Visa or Mastercard)</li>
+                        <li>an email address</li>
+                        <li>a photo of your face, or a device that can take one.</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h2>The IVL</h2>
+                    <p>If you are entering New Zealand you must also pay an IVL, which funds tourism infrastructure and helps protect our natural environment. You pay the IVL at the same time as you request your NZeTA. The IVL costs NZD $35.</p>
+                    <a href="#" class="privacy-link">Your privacy</a>
+                    <h3>Photo Requirements</h3>
+                    <p>You need to provide a photo of your face that meets our requirements for NZeTA photos. You can either upload a recent photo or use your device's camera to take a photo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Request your NZeTA </h1>
+            <p>If your passport details are not correct you may not be able to travel.</p> 
+            <form>
+                <div class="form-group">
+                    <label for="nationality">Select your nationality as shown on the passport you will be travelling on <span class="required">*</span></label>
+                    <input type="text" id="nationality" name="nationality" required>
+                </div>
+                </form>
+                </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <img src="https://www.mbie.govt.nz/resources/themes/mbie/dist/img/logo.svg?m=1717072773" alt="Ministry of Business, Innovation & Employment" class="footer-logo">
+                    <span class="footer-text">MINISTRY OF BUSINESS, INNOVATION & EMPLOYMENT</span>
+                    <span class="footer-text">HĪKINA WHAKATUTUKI</span>
+                </div>
+                <div class="footer-right">
+                    <span class="footer-text">New Zeland Government</span> 
+                </div>
+            </div>
+            <hr>
+            <div class="footer-links">
+                <a href="#">ACCESSIBILITY</a>
+                <a href="#">PRIVACY</a>
+                <a href="#">COPYRIGHT</a>
+                <a href="#">TERMS OF USE</a>
+                <a href="#">CONTACT US</a>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2024 IMMIGRATION NEW ZEALAND</span>
+                <span>(170820)</span>
+            </div>
+        </footer>
+    </main>
+    
+    <!-- Include JavaScript file for menu toggle functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
